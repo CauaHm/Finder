@@ -69,6 +69,7 @@ main {
     align-items: center;
     gap: 10%;   
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 20px;
 }
 
 .infos {
@@ -116,14 +117,15 @@ span {
     align-self: flex-end;
 }
 
-.btn {
+.btn input {
     margin: 10px 0;
     background-color: #00aaff;
     cursor: pointer;
     border: none;
+    width: 100%;
 }
 
-.btn:hover {
+.btn input:hover {
     background-color: var(--cor-principal);
     transition: 0.2s;
     color: var(--cor-fundo);
