@@ -25,7 +25,7 @@ body {
     width: 250px;   
     height: 40px;
     padding-left: 15px;
-    background-color: #1e1c2e;
+    background-color: #ffffff;
     color: #b6b6b6;
 }
 
@@ -35,8 +35,8 @@ body {
     width: 250px;
     height: 40px;
     padding-left: 15px;
-    background-color: #1e1c2e;
-    color: #b6b6b6;
+    background-color: #ffffff;
+    color: #000000;
     margin-top: 15px;
 }
 
@@ -51,12 +51,12 @@ body {
     height: 40px;
     border-radius: 20px;
     border: none;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(72, 147, 233);
     color: #141414;
 }
 
 input::placeholder {
-    color: #b6b6b6;
+    color: #000000;
 }
 
 h1 {
@@ -83,7 +83,7 @@ h1 {
     gap: 20px;
     border: 1px solid whitesmoke;
     border-radius: 21%; 
-    background: linear-gradient(to right, white, rgb(170, 195, 223));
+    background: linear-gradient(to right, rgb(139, 132, 179), rgb(45, 61, 82));
 }
 
 .caixa img {
