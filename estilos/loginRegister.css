@@ -13,6 +13,7 @@
 }
 
 body {
+    background-image: url(https://i.imgur.com/XbRg9D7.png);
     width: 100vw;
     height: 100vh;
     background-color: rgb(212, 212, 212);
@@ -51,7 +52,7 @@ body {
     height: 40px;
     border-radius: 20px;
     border: none;
-    background-color: rgb(72, 147, 233);
+    background-color: rgb(141, 148, 245);
     color: #141414;
 }
 
@@ -83,7 +84,7 @@ h1 {
     gap: 20px;
     border: 1px solid whitesmoke;
     border-radius: 21%; 
-    background: linear-gradient(to right, rgb(139, 132, 179), rgb(45, 61, 82));
+    background: linear-gradient(to right, rgb(139, 132, 179), rgb(224, 216, 216));
 }
 
 .caixa img {
