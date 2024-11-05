@@ -24,15 +24,18 @@ body {
   background-color: rgb(41, 55, 121);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
   
 }
   
 .container {
   display: flex;
   justify-content: center;
-  width: 100%;
-  margin-top: 100px;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
 }
 
 .card {
@@ -40,7 +43,8 @@ body {
   padding: 30px;
   border-radius: 4%;
   box-shadow: 3px 3px 1px 0px #00000060;
-  width: 400px;
+  width: 500px;
+  
 
 }
 
@@ -78,7 +82,7 @@ h1{
 
 .label-float label{
   color: #000000;
-  pointer-event: none;
+  pointer-events: none;
   position: absolute;
   top: 0;
   left: 0;
