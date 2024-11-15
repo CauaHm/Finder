@@ -39,11 +39,17 @@ body {
 }
 
 .card {
-  background-color: #ffffff80;
-  padding: 30px;
-  border-radius: 4%;
-  box-shadow: 3px 3px 1px 0px #00000060;
   width: 500px;
+  height: 500px;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 6%; 
+  background-color: #ffffff80;
   
 
 }
