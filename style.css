@@ -4,80 +4,79 @@
     --cor-secundaria: #F0B579;
     --cor-destaque: #F7E6D2;
     --cor-destaque: #DC9760;
-    --cor-cinza-escuro-neutro:#383838;
-    --cor-secundario-hover:#FFDBC4;
-    --cor-bg: #EDEDED;
-
+    --cor-cinza-escuro-neutro: #383838;
+    --cor-secundario-hover: #FFDBC4;
+    --cor-bg: #EDEDED
 }
 
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--cor-bg-);
+    background-color: var(--cor-bg-)
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none
 }
 
 .cabecalho {
     background-color: var(--cor-principal);
-    color: white;
+    color: #fff;
     padding: 20px;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center
 }
 
 .cabecalho-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;    
+    justify-content: center
 }
 
 .cabecalho-logo img {
-    width: 200px;
+    width: 200px
 }
 
 .navegacao ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 
 .navegacao ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 15px
 }
 
 .navegacao ul li a:hover {
     color: var(--cor-secundario-hover);
     text-decoration: underline;
-    transition: 0.2s;
+    transition: .2s
 }
 
 .navegacao a {
-    color: white;
-    text-decoration: none;
+    color: #fff;
+    text-decoration: none
 }
 
 .heart i {
-    width: 40px;
+    width: 40px
 }
 
 .heart i:hover {
     color: red;
-    transition: 0.4s;
-    border-bottom: 3px solid red;
+    transition: .4s;
+    border-bottom: 3px solid red
 }
 
 .busca-container {
@@ -85,14 +84,12 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 0
 }
 
 .barra-busca {
-    width: 100%;
+    width: 100%
 }
-
-
 
 .barra-busca,
 .botao-submit {
@@ -100,24 +97,25 @@ a {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    cursor: pointer;
+    cursor: pointer
 }
+
 .promocao-finder {
-    background-color: var(--cor-cinza-escuro-neutro); /* Cor de fundo suave */
-    padding: 50px 20px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
+    background-color: var(--cor-cinza-escuro-neutro);
+    padding: 50px 20px;
+    text-align: center;
     margin: 20px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--cor-branco);
+    color: var(--cor-branco)
 }
 
 .container {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: center
 }
 
 .container-wel {
@@ -125,80 +123,78 @@ a {
     text-align: center;
     justify-self: center;
     align-self: center;
-    border-right: 5px solid var(--cor-branco);
+    border-right: 5px solid var(--cor-branco)
 }
 
 .container-wel-p {
     width: auto;
     text-align: center;
-    padding: 50px;
+    padding: 50px
 }
 
 .promocao-finder h2 {
-    font-size: 2em; /* Tamanho da fonte do título */
-    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-size: 2em;
+    margin-bottom: 20px
 }
 
 .promocao-finder p {
-    font-size: 1.2em; /* Tamanho da fonte dos parágrafos */
-    margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
-    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5
 }
 
 .btn-explorar {
-    display: inline-block; /* Para adicionar espaçamento ao redor do botão */
-    background-color: var(--cor-secundaria); /* Cor do botão */
-    color: white; /* Cor do texto do botão */
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    text-decoration: none; /* Remove sublinhado do link */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: background-color 0.3s; /* Efeito de transição na cor de fundo */
+    display: inline-block;
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color .3s
 }
 
 .btn-explorar:hover {
-    background-color:var(--cor-principal); /* Cor do botão ao passar o mouse */
+    background-color: var(--cor-principal)
 }
-
 
 .botao-nav {
     background-color: var(--cor-principal);
-    color: white;
+    color: #fff;
     border: none;
     padding: 10px;
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1000;
+    z-index: 1000
 }
 
 #prev {
-    left: 10px;
+    left: 10px
 }
 
 #next {
-    right: 10px;
+    right: 10px
 }
-
 
 .produtos-destaque {
     max-width: 1200px;
-    margin: auto;
+    margin: auto
 }
+
 .mensagem-busca {
-    text-align: center; /* Centraliza a mensagem */
-    margin: 20px 0; /* Margem acima e abaixo */
+    text-align: center;
+    margin: 20px 0
 }
 
 .mensagem-busca h3 {
-    font-size: 1.5em; /* Tamanho da fonte da mensagem */
-    color: #333; /* Cor do texto */
+    font-size: 1.5em;
+    color: #333
 }
-
 
 .categorias-container {
     text-align: center;
-    margin: 20px 0;
+    margin: 20px 0
 }
 
 .botao-categoria {
@@ -206,69 +202,67 @@ a {
     padding: 10px 15px;
     border: none;
     background-color: var(--cor-secundaria);
-    color: white;
+    color: #fff;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer
 }
 
-.botao-categoria:hover{
+.botao-categoria:hover {
     background-color: var(--cor-principal);
     border: 2px solid var(--cor-cinza-escuro-neutro);
-    transition: 0.2s;
+    transition: .2s
 }
-
 
 .grid-produtos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 20px
 }
 
 .produto {
-    background: white;
+    background: #fff;
     border: 2px solid var(--cor-principal);
     border-radius: 10px;
     padding: 15px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .produto-img {
     width: 100%;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-secundaria)
 }
 
 .produto-info {
     width: auto;
     display: grid;
     grid-template-rows: 1fr 20px 20px;
-    gap: 20px;
+    gap: 20px
 }
 
 .produto-preco {
-    width: auto;
-
+    width: auto
 }
 
-.produto a  {
+.produto a {
     background-color: var(--cor-secundaria);
     padding: 15px;
     color: var(--cor-branco);
     border-radius: 5px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .produto a:hover {
     background-color: var(--cor-principal);
     border: 2px solid var(--cor-cinza-escuro-neutro);
-    transition: 0.2s;
+    transition: .2s
 }
 
 .imagem-produto {
-    width: 100%; 
-    height: auto; 
-    border-radius: 5px; 
+    width: 100%;
+    height: auto;
+    border-radius: 5px
 }
 
 .rodape {
@@ -277,6 +271,5 @@ a {
     color: var(--cor-cinza-escuro-neutro);
     text-align: center;
     padding: 10px 0;
-    width: 100%;
+    width: 100%
 }
-

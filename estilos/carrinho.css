@@ -4,14 +4,13 @@
     --cor-secundaria: #F0B579;
     --cor-destaque: #F7E6D2;
     --cor-destaque: #DC9760;
-    --cor-cinza-escuro-neutro:#383838;
-    --cor-secundario-hover:#FFDBC4;
-    --cor-bg: #EDEDED;
-
+    --cor-cinza-escuro-neutro: #383838;
+    --cor-secundario-hover: #FFDBC4;
+    --cor-bg: #EDEDED
 }
 
 body {
-    background-color: #EDEDED;
+    background-color: #EDEDED
 }
 
 .favoritos {
@@ -24,16 +23,13 @@ body {
 }
 
 .favoritos-produtos {
-    
     width: 900px;
     height: auto;
     border-radius: 10px;
     background-color: var(--cor-branco);
-    border-bottom: 2px solid #E3E3E3;
+    border-bottom: 2px solid #E3E3E3
 }
 
 .favoritos-produtos P {
-    padding: 10px;
-    
-
+    padding: 10px
 }

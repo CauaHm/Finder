@@ -4,62 +4,60 @@
     --cor-secundaria: #F0B579;
     --cor-destaque: #F7E6D2;
     --cor-destaque: #DC9760;
-    --cor-cinza-escuro-neutro:#383838;
-    --cor-secundario-hover:#FFDBC4;
-    --cor-bg: #EDEDED;
-
+    --cor-cinza-escuro-neutro: #383838;
+    --cor-secundario-hover: #FFDBC4;
+    --cor-bg: #EDEDED
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: hidden
 }
 
 body {
     font-family: Arial, sans-serif;
     width: 100vw;
     height: 100vh;
-    background-color: var(--cor-bg);
+    background-color: var(--cor-bg)
 }
-
 
 main {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .section {
-    width:90%;
+    width: 90%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;   
+    gap: 10%;
     box-shadow: 2px 2px 6px var(--cor-principal);
     background-color: var(--cor-branco);
-    border-radius: 10px;
+    border-radius: 10px
 }
-
 
 .section2 {
     display: flex;
-    gap: 50px;
+    gap: 50px
 }
+
 .infos {
     display: flex;
     flex-direction: column;
     padding: 50px;
     align-items: center;
-    width: 100%;
+    width: 100%
 }
 
 img {
-width: 300px;
+    width: 300px
 }
 
 .formClass {
@@ -68,35 +66,34 @@ width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 5px solid var(--cor-principal);
+    border-left: 5px solid var(--cor-principal)
 }
 
 .formClass form {
-    width: 100%;
+    width: 100%
 }
 
 .form-container {
     display: flex;
-    gap: 20px;
+    gap: 20px
 }
 
 .form-name {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 50%
 }
 
 .form-blocked {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 50%
 }
 
 form {
     display: flex;
     flex-direction: column;
-    width: 500px    ;
-    
+    width: 500px
 }
 
 input {
@@ -104,29 +101,29 @@ input {
     margin-bottom: 10px;
     border-radius: 15px;
     border: none;
-    border: 1px solid black;
-    outline: none;
+    border: 1px solid #000;
+    outline: none
 }
 
 span {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
 }
 
 .register {
-    align-self: flex-end;
+    align-self: flex-end
 }
 
 .btn {
     margin: 10px 0;
     background-color: var(--cor-secundaria);
     cursor: pointer;
-    border: none;
+    border: none
 }
 
 .btn:hover {
     background-color: var(--cor-principal);
-    transition: 0.2s;
+    transition: .2s;
     color: var(--cor-fundo);
-    border: none;
+    border: none
 }
