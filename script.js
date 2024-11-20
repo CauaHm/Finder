@@ -4,15 +4,6 @@ document.getElementById('botao-buscar').addEventListener('click', function() {
     buscarProdutos(produtoBuscado);
 });
 
-// Adiciona listener para o campo de busca
-document.getElementById('campo-busca').addEventListener('keydown', function(event) {
-    if (event.key === 'Enter') {
-        event.preventDefault(); // Previne o comportamento padrão do Enter
-        const produtoBuscado = document.getElementById('campo-busca').value;
-        buscarProdutos(produtoBuscado);
-    }
-});
-
 // Adiciona listeners para os botões de categoria
 const botoesCategoria = document.querySelectorAll('.botao-categoria');
 botoesCategoria.forEach(botao => {
@@ -54,3 +45,5 @@ function exibirResultados(produtos) {
         gridProdutos.appendChild(divProduto);
     });
 }
+
+
