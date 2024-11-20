@@ -18,18 +18,61 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center
 }
 
+.favoritos h1 {
+    margin: 10px
+}
+
 .favoritos-produtos {
-    width: 900px;
+    width: 1000px;
     height: auto;
     border-radius: 10px;
     background-color: var(--cor-branco);
-    border-bottom: 2px solid #E3E3E3
+    display: grid;
+    grid-template-columns: 100px 1fr 100px 100px auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px
 }
 
-.favoritos-produtos P {
-    padding: 10px
+.favoritos-produtos img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px
+}
+
+.favoritos-produtos h1 {
+    margin: 0;
+    font-size: 1rem;
+    text-align: left
+}
+
+.favoritos-produtos p {
+    margin: 0;
+    text-align: center
+}
+
+.favoritos-produtos a {
+    text-decoration: none;
+    color: var(--cor-principal)
+}
+
+.btn-remover {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--cor-branco);
+    background-color: red;
+    cursor: pointer;
+    text-align: center
+}
+
+.btn-remover:hover {
+    background-color: #950202;
+    transition: .2s
 }
