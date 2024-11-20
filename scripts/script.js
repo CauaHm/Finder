@@ -3,7 +3,14 @@ document.getElementById('botao-buscar').addEventListener('click', function() {
     const produtoBuscado = document.getElementById('campo-busca').value;
     buscarProdutos(produtoBuscado);
 });
-
+// Adiciona evento ao clicar enter
+document.getElementById('campo-busca').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); // Previne o comportamento padrão do Enter
+        const produtoBuscado = document.getElementById('campo-busca').value;
+        buscarProdutos(produtoBuscado);
+    }
+});
 // Adiciona listeners para os botões de categoria
 const botoesCategoria = document.querySelectorAll('.botao-categoria');
 botoesCategoria.forEach(botao => {
@@ -37,10 +44,14 @@ function exibirResultados(produtos) {
         const divProduto = document.createElement('div');
         divProduto.className = 'produto';
         divProduto.innerHTML = `
+            <div class='produto-img'>
             <img src="${produto.thumbnail}" alt="${produto.title}" class="imagem-produto">
+            </div>
+            <div class='produto-info'>
             <h3>${produto.title}</h3>
-            <p>Preço: R$ ${produto.price.toFixed(2)}</p>
+            <p class='produto-preco'>Preço: R$ ${produto.price.toFixed(2)}</p>
             <p><a href="${produto.permalink}" target="_blank">Comprar</a></p>
+            </div>
         `;
         gridProdutos.appendChild(divProduto);
     });

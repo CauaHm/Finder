@@ -1,14 +1,29 @@
 :root {
-    --cor-fundo: #f8f8f8;
-    --cor-principal: #007bff;
-    --cor-secundaria: #343a40;
-    --cor-texto: #333;
+    --cor-branco: #f8f8f8;
+    --cor-principal: #DC9760;
+    --cor-secundaria: #F0B579;
+    --cor-destaque: #F7E6D2;
+    --cor-destaque: #DC9760;
+    --cor-cinza-escuro-neutro:#383838;
+    --cor-secundario-hover:#FFDBC4;
+    --cor-bg: #EDEDED;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-bg-);
+}
+
+a {
+    text-decoration: none;
 }
 
 .cabecalho {
@@ -21,11 +36,15 @@ body {
     align-items: center;
 }
 
-.cabecalho-logo{
+.cabecalho-logo {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    gap: 10px;
+    justify-content: center;    
+}
+
+.cabecalho-logo img {
+    width: 200px;
 }
 
 .navegacao ul {
@@ -40,9 +59,25 @@ body {
     margin: 0 15px;
 }
 
+.navegacao ul li a:hover {
+    color: var(--cor-secundario-hover);
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
 .navegacao a {
     color: white;
     text-decoration: none;
+}
+
+.heart i {
+    width: 40px;
+}
+
+.heart i:hover {
+    color: red;
+    transition: 0.4s;
+    border-bottom: 3px solid red;
 }
 
 .busca-container {
@@ -57,6 +92,8 @@ body {
     width: 100%;
 }
 
+
+
 .barra-busca,
 .botao-submit {
     margin-right: 10px;
@@ -66,7 +103,7 @@ body {
     cursor: pointer;
 }
 .promocao-finder {
-    background-color: var(--cor-secundaria); /* Cor de fundo suave */
+    background-color: var(--cor-cinza-escuro-neutro); /* Cor de fundo suave */
     padding: 50px 20px; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto */
     margin: 20px;
@@ -74,7 +111,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--cor-fundo);
+    color: var(--cor-branco);
 }
 
 .container {
@@ -88,7 +125,7 @@ body {
     text-align: center;
     justify-self: center;
     align-self: center;
-    border-right: 5px solid var(--cor-fundo);
+    border-right: 5px solid var(--cor-branco);
 }
 
 .container-wel-p {
@@ -110,7 +147,7 @@ body {
 
 .btn-explorar {
     display: inline-block; /* Para adicionar espaçamento ao redor do botão */
-    background-color: #007bff; /* Cor do botão */
+    background-color: var(--cor-secundaria); /* Cor do botão */
     color: white; /* Cor do texto do botão */
     padding: 10px 20px; /* Espaçamento interno do botão */
     text-decoration: none; /* Remove sublinhado do link */
@@ -119,7 +156,7 @@ body {
 }
 
 .btn-explorar:hover {
-    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+    background-color:var(--cor-principal); /* Cor do botão ao passar o mouse */
 }
 
 
@@ -168,11 +205,18 @@ body {
     margin: 0 10px;
     padding: 10px 15px;
     border: none;
-    background-color: var(--cor-principal);
+    background-color: var(--cor-secundaria);
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.botao-categoria:hover{
+    background-color: var(--cor-principal);
+    border: 2px solid var(--cor-cinza-escuro-neutro);
+    transition: 0.2s;
+}
+
 
 .grid-produtos {
     display: grid;
@@ -182,10 +226,43 @@ body {
 
 .produto {
     background: white;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 2px solid var(--cor-principal);
+    border-radius: 10px;
     padding: 15px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.produto-img {
+    width: 100%;
+    background-color: var(--cor-secundaria);
+}
+
+.produto-info {
+    width: auto;
+    display: grid;
+    grid-template-rows: 1fr 20px 20px;
+    gap: 20px;
+}
+
+.produto-preco {
+    width: auto;
+
+}
+
+.produto a  {
+    background-color: var(--cor-secundaria);
+    padding: 15px;
+    color: var(--cor-branco);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.produto a:hover {
+    background-color: var(--cor-principal);
+    border: 2px solid var(--cor-cinza-escuro-neutro);
+    transition: 0.2s;
 }
 
 .imagem-produto {
@@ -196,7 +273,8 @@ body {
 
 .rodape {
     background-color: var(--cor-secundaria);
-    color: white;
+    margin-top: 40px;
+    color: var(--cor-cinza-escuro-neutro);
     text-align: center;
     padding: 10px 0;
     width: 100%;
