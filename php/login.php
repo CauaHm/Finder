@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Verificar se a senha corresponde
         if (password_verify($senha, $user['senha'])) {
             // Login bem-sucedido, redirecionar para a página inicial
-            header("Location: https://cauahm.github.io/Finder/index.html");
+            header("Location: http://localhost/finderwebsite/index.html");
             exit;  // Importante para evitar que o código continue executando
         } else {
             echo "Senha incorreta.";
