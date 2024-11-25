@@ -31,6 +31,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Verificar se a senha corresponde
         if (password_verify($senha, $user['senha'])) {
             echo "Login bem-sucedido! Redirecionando...";
+            header("Location: https://unisofinder.netlify.app/");
+            exit;
         } else {
             echo "Senha incorreta.";
         }

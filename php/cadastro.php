@@ -33,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             echo "<script>
                 alert('Erro ao cadastrar: " . $conn->error . "');
+                window.location.href = 'cadastro.html'; // Redirecionar para a mesma página
             </script>";
         }
     } else {
