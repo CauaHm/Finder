@@ -28,10 +28,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // Executar a consulta e verificar sucesso
         if ($conn->query($sql) === TRUE) {
-            echo "<script>
-                alert('Cadastro realizado com sucesso!');
-                window.location.href = 'https://unisofinder.netlify.app/'; // Redirecionar para a mesma página
-            </script>";
+            header('Location: https://unisofinder.netlify.app/');
+            exit; // Garante que o script pare aqui
         } else {
             echo "<script>
                 alert('Erro ao cadastrar: " . $conn->error . "');
