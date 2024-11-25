@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Verificar se a senha corresponde
         if (password_verify($senha, $user['senha'])) {
             // Login bem-sucedido, redirecionar para a página inicial
-            header("Location: http://localhost/finderwebsite/index.html");
+            header("Location: https://unisofinder.netlify.app/");
             exit;  // Importante para evitar que o código continue executando
         } else {
             echo "Senha incorreta.";
