@@ -19,8 +19,10 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    
 }
 
 .favoritos h1 {
@@ -29,6 +31,7 @@ body {
 
 .favoritos-produtos {
     width: 1000px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     height: auto;
     border-radius: 10px;
     background-color: var(--cor-branco);
@@ -57,10 +60,17 @@ body {
     text-align: center
 }
 
+
+
 .favoritos-produtos a {
     text-decoration: none;
     color: var(--cor-principal)
 }
+
+.favoritos-produtos a:hover {
+    border-bottom: 2px solid var(--cor-principal);
+    
+} 
 
 .btn-remover {
     border: none;
